@@ -1,0 +1,231 @@
+ 
+ <html>
+
+ <head>
+     <title>Video Gallery</title>
+     <style>
+         /* Global Styles */
+         <style>
+    /* Global Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+
+    /* Header */
+    header {
+        text-align: center;
+        background-color: #0077b6;
+        color: white;
+        padding: 20px 0;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2em; /* تقليل الحجم */
+    }
+
+    header p {
+        font-size: 1em;
+        margin: 10px 0 0;
+    }
+
+    /* Main Section */
+    .video-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .video-item {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .video-item video {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .video-item h3 {
+        font-size: 1em;
+        margin: 10px 0 5px;
+    }
+
+    .video-item p {
+        font-size: 0.85em;
+        color: #555;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        background-color: #0077b6;
+        color: white;
+        padding: 10px 0;
+        font-size: 0.9em;
+        margin-top: 20px;
+    }
+
+    /* Navigation Bar */
+    .medo{
+                display: flex;justify-content: center;align-items: center;min-height: 10vh;
+            }
+            
+        nav{
+          position: relative;width: 475px;height: 50px;background:white;border-radius: 10px;display:
+        flex;justify-content: center;align-items: center;border: 1px solid;
+        }
+        nav a{
+            position: relative;display: inline-block;font-size: 1em;font-weight: 500;color: black;
+            text-decoration: none;padding: 0 23px;z-index: 1;
+        }
+        nav span {
+            position: absolute;top: 0;left: 0;width: 95px;height: 100%;background: linear-gradient(45deg,#192e4f,#5833ff);border-radius: 10px;transition: 0.5s;
+        }
+        nav a:nth-child(1):hover~span{
+            left: 0px;
+        }
+        nav a:nth-child(2):hover~span{
+            left: 90px;
+        }
+        nav a:nth-child(3):hover~span{
+            left: 180px;
+        }
+        nav a:nth-child(4):hover~span{
+            left: 275px;
+        }
+        nav a:nth-child(5):hover~span{
+            left: 380px;
+        }
+        
+
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 1.8em;
+        }
+
+        header p {
+            font-size: 0.9em;
+        }
+
+        .video-item {
+            max-width: 100%; /* استخدام العرض الكامل */
+        }
+
+        nav {
+            flex-direction: column;
+            height: auto;
+        }
+
+        nav a {
+            padding: 10px 20px;
+        }
+
+        nav span {
+            display: none; /* الشريط غير مطلوب على الأجهزة الصغيرة */
+        }
+    }
+
+    @media (max-width: 480px) {
+        header h1 {
+            font-size: 1.5em;
+        }
+
+        header p {
+            font-size: 0.8em;
+        }
+
+        .video-container {
+            gap: 10px; /* تقليل التباعد */
+        }
+
+        .video-item {
+            padding: 8px;
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        nav a {
+            font-size: 0.8em;
+        }
+    }
+</style>
+   
+ <body>
+
+    <header>
+        <h1>Video Gallery</h1>
+        <p>Explore our collection of amazing videos.</p>
+    </header>
+    <div class="medo">
+       
+
+        <nav class="nav"  >
+        
+        
+        
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+            <a href="video.html"><i class="fas fa-video"></i> Video</a>
+            <a href="sevices.html"><i class="fas fa-stethoscope"></i> Services</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+            <span></span>
+        </nav>
+        </div>
+
+    <main>
+        <div class="video-container">
+            <!-- Video 1 -->
+            <div class="video-item">
+                <video controls>
+                    <source src="c:\Users\Asus\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\F6E06644C3FB17C52BE6BD0421B599B9\WhatsApp Video 2024-12-20 at 15.43.40_eed8d9e1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Video Title 1</h3>
+                <p>Description of the first video.</p>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-item">
+                <video controls>
+                    <source src="c:\Users\Asus\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\CB757EF40153CA7301D5333DE1BE4E06\WhatsApp Video 2024-12-20 at 15.43.40_464e8986.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Video Title 2</h3>
+                <p>Description of the second video.</p>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="video-item">
+                <video controls>
+                    <source src="c:\Users\Asus\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\68C86F3F9A4EEFDC3180F488AC749DB5\WhatsApp Video 2024-12-20 at 15.43.40_0a189022.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Video Title 3</h3>
+                <p>Description of the third video.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>
